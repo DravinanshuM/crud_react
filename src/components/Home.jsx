@@ -10,6 +10,7 @@ import dataBaseImage from '../assets/database_2232241.png';
 const Home = () => {
     //1. make state as an array for hold form data.
     const [data, setData] = useState([]);
+
     const [formData, setFormData] = useState({
         name:'',
         email: '',
@@ -65,6 +66,8 @@ const Home = () => {
         getData();
     },[id]);
     
+
+console.log(data);
 
     // 3. create a function for get input field value.
     const handleChange = (e)=> {
